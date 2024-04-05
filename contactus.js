@@ -44,7 +44,7 @@ app.post('/submit-form', async (req, res) => {
     }
 });
 
-app.get("/", (req, res) => {  
+app.get("/hello", (req, res) => {  
     res.send("hello world");
     console.log("resp send successfuly")
 });
