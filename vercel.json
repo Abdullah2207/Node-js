@@ -1,1 +1,16 @@
-{ "version": 2, "rewrites": [{ "source": "/(.*)", "destination": "/" }] }
+{
+    "version":2,
+    "builds":[
+        {
+            "src":"contactus.js",
+            "use":"@now/node"
+        }
+    ],
+    "routes":[
+        {
+            "src":"/(.*)",
+            "dest":"contactus.js"
+        }
+    ]
+    
+}
